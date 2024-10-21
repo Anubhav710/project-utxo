@@ -3,25 +3,119 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --clamp-font-size: clamp(14px, 1vw, 24px);
+  --sticky-z-index: 30;
+  --package-header-styles: lg:text-4xl md:text-3xl text-2xl font-bold text-center mb-4;
+  --common-margin: md:mt-32 mt-10;
+  --common-height-sm: md:h-[180px] h-[200px];
+  --common-height-lg: md:h-[300px] h-[230px];
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer components {
+  .rows {
+    @apply h-full w-[calc(100%/5)] space-y-7;
   }
+
+  .img-c {
+    @apply h-[calc(100%/6)] w-full rounded-md overflow-hidden relative;
+  }
+
+  .s {
+    @apply h-screen w-full bg-gray-300;
+  }
+
+  .b {
+    @apply border border-red-100;
+  }
+
+  .common-margin, .smo-common-margin, .seo-common-margin, .paid-ads-common-margin, .meta-ads-common-margin {
+    @apply md:mt-32 mt-0;
+  }
+
+  .common-height, .smo-common-height, .seo-common-height {
+    @apply md:h-[180px] h-[200px];
+  }
+
+  .meta-ads-common-height,.paid-ads-common-height {
+    @apply md:h-[300px] h-[240px] xxs-md:h-[210px]  ;
+  }
+
+
+  .website-package-header, .smo-package-header, .seo-package-header {
+    @apply lg:text-4xl md:text-3xl text-2xl font-bold text-center mb-4;
+  }
+
+  .paid-ads-package-header, 
+  .meta-ads-package-header {
+    @apply lg:text-4xl md:text-3xl text-xl font-bold text-center mb-1;
+  }
+
+  .pricing-subheader {
+    @apply md:space-y-5  space-y-0;
+    font-size: clamp(14px, 1.2vw, 24px);
+    line-height: clamp(18px, 1.7vw, 24px);
+  }
+
+  
+  .common-size, .smo-common-size, .seo-common-size, .paid-ads-common-size, .meta-ads-common-size {
+    font-size: var(--clamp-font-size);
+  }
+
+  .seo-common-sitcky-header,.smo-common-sitcky-header {
+    @apply sticky md:top-[180px] top-[200px] z-40;
+  }
+
+  .meta-ads-common-sticky-header,.paid-ads-common-sticky-header {
+    @apply sticky md:top-[300px] top-[240px] xxs-md:top-[210px]  ;
+    z-index: var(--sticky-z-index);
+  }
+ 
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.text-clamp { font-size: clamp(50px, 9vw, 800px); }
+.text-clamp-2 { font-size: 6vw; }
+.text-clamp-p { font-size: clamp(0.2rem, 2vw, 32px); }
+.h-clamp { height: clamp(50vh, 100vw, 100vh); }
+.btn-clamp { height: clamp(44px, 6vw, 3.2rem); }
+.s-clamp-h { font-size: clamp(2rem, 8vw, 7rem); }
+.s-clamp-b { height: clamp(2rem, 8vw, 7rem); width: clamp(2rem, 8vw, 7rem); }
+.ser-text-clamp { font-size: clamp(2rem, 6vw, 8rem); line-height: 100%; }
+.service-title { font-size: clamp(2rem, 6.5vw, 7.2rem); line-height: 1; }
+.project-section-header { font-size: clamp(2rem, 6vw, 7rem); }
+.tagline-header { font-size: clamp(1.5rem, 6.5vw, 7rem); }
+
+.nav {
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(7px);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.rounded-div-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  margin-top: -100px;
+}
+
+.rounded-div {
+  position: absolute;
+  left: 50%;
+  width: 150%;
+  height: 750%;
+  border-radius: 50%;
+  background-color: white;
+  transform: translate(-50%);
+}
+
+.gallery h1 { font-size: clamp(2em, 4vw, 6em); }
+.gallery p { font-size: clamp(1.4em, 2.5vw, 5em); line-height: 1.4; }
+
+.pro-box { aspect-ratio: 16 / 9; }
+
+.scroll-down { background-color: rgba(0, 0, 0); }
+
+@media (min-width: 768px) {
+  .ser-text-clamp-s {
+    font-size: clamp(2rem, 6vw, 8rem);
   }
 }

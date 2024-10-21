@@ -61,7 +61,7 @@ const Header: React.FC = () => {
       }}
       animate={hidden ? "hidden" : "visible"}
       transition={{ duration: 0.5, ease: "easeInOut" }}
-      className="z-[999] fixed top-4 left-0 right-0 w-full"
+      className="z-[999]  fixed top-4 left-0 right-0 w-full"
     >
       <ul
         onMouseLeave={() => {
@@ -70,7 +70,7 @@ const Header: React.FC = () => {
             opacity: 0,
           }));
         }}
-        className="relative flex xxs-xs:hidden md:flex mx-auto py-3 md:py-1 px-6  w-fit rounded-full nav items-center  md:px-5"
+        className="relative flex xxs-xs:hidden md:flex mx-auto py-3 md:py-1 px-6  w-fit rounded-full nav items-center   md:px-5"
       >
         <Link href="/">
           <Image

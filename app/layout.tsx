@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import dynamic from "next/dynamic";
+import { myFont2 } from "@/fonts";
 const HeaderNoSSR = dynamic(() => import("@/components/sections/Header"), {
   ssr: false,
 });
@@ -32,7 +33,8 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [{ url: "/images/favicon.ico" }],
-    apple: [{ url: "/images/avicon.ico" }],
+    apple: [{ url: "/images/favicon.ico" }],
+    shortcut: [{ url: "/images/favicon.ico" }],
   },
   openGraph: {
     type: "article",
@@ -42,6 +44,7 @@ export const metadata: Metadata = {
     url: "https://utxotech.com/",
     locale: "en_US",
     siteName: "UTXO Web Tech",
+    images: [{ url: "/images/utxo-og.jpg" }],
   },
   twitter: {
     card: "summary",
@@ -50,6 +53,7 @@ export const metadata: Metadata = {
       "UTXO Web Tech offers top-tier web development, digital marketing, graphic design, and a wide range of digital solutions for your business. Contact us today!",
     site: "@utxotech",
     creator: "@utxotech",
+    images: ["/images/utxo-twitter.jpg"],
   },
   other: {
     "article:publisher": "https://www.facebook.com/utxotech/",
@@ -63,6 +67,15 @@ export const metadata: Metadata = {
     "apple-touch-full-screen": "yes",
     "apple-mobile-web-app-title":
       "UTXO Web Tech | Web, Graphic, and Digital Marketing Services",
+  },
+  appleWebApp: {
+    title: "UTXO Web Tech",
+    statusBarStyle: "default",
+    startupImage: [
+      {
+        url: "/images/favicon.ico",
+      },
+    ],
   },
 };
 
@@ -88,9 +101,7 @@ export default function RootLayout({
           content="usxolc3084tpt8qu3tw98f6go6354g"
         />
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${myFont2.className} antialiased`}>
         <HeaderNoSSR />
         {children}
       </body>

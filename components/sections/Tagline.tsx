@@ -43,10 +43,10 @@ const Tagline = () => {
         {/* BOX-1  */}
         <div className={`relative  `}>
           <h1 className=" tag  font-semibold tagline-header ">
-            Building brands, one click at a time. Your digital navigator
+            Building brands, one click at a time. Your digital navigator.
           </h1>
           <h1 className=" absolute   top-0 opacity-[0.3] font-semibold tagline-header ">
-            Building brands, one click at a time. Your digital navigator
+            Building brands, one click at a time. Your digital navigator.
           </h1>
         </div>
       </div>

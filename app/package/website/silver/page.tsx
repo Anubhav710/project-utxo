@@ -5,6 +5,7 @@ import React from "react";
 import { FaRegCheckCircle } from "react-icons/fa";
 import { FaCheck, FaCircleCheck, FaCross } from "react-icons/fa6";
 import { ImCross } from "react-icons/im";
+import WebsiteHeader from "../../components/WebsiteHeader";
 
 interface PackageType {
   subTitle: string;
@@ -25,26 +26,11 @@ interface WebsiteGoldPackage {
 const PricingPage: React.FC = () => {
   return (
     <div className="bg-black   text-white p-4 cp sm:p-8 min-h-screen relative max-w-screen-xl mx-auto w-full ">
-      
-      <header className="common-margin  common-height sticky  top-0 z-50 bg-black">
-      <h1 className=" website-package-header ">
-       Website Silver Package
-      </h1>
-        {/* Top Header */}
-        <div className="grid  common-size grid-cols-4 gap-4 py-4  text-neutral-500 uppercase ">
-          <div className="text-left font-bold">Features</div>
-          <div className="text-center font-bold">Basic</div>
-          <div className="text-center font-bold">Premium</div>
-          <div className="text-center font-bold">Advance</div>
-        </div>
-        {/* Pricing Header */}
-        <div className="grid grid-cols-4 gap-4 py-4 xxs-xs:pb-1  tm">
-          <div></div>
-          <div className="text-center">₹15,000 / Month</div>
-          <div className="text-center">₹25,000 / Month</div>
-          <div className="text-center">₹35,000 / Month</div>
-        </div>
-      </header>
+      <WebsiteHeader
+        title="Website Silver Package"
+        features={["Features", "Basic", "Premium", "Advance"]}
+        pricing={["", "₹15,000 / Month", "₹25,000 / Month", "₹35,000 / Month"]}
+      />
 
       {/* Body */}
       <div className="relative">
@@ -67,7 +53,6 @@ const PricingPage: React.FC = () => {
                     <div className="text-left font-semibold text-2xl xxs-xs:text-[1.25rem]">
                       {currentSection.title}
                     </div>
-                  
                   </div>
 
                   {/* Section Body */}
@@ -76,11 +61,18 @@ const PricingPage: React.FC = () => {
                       className="grid grid-cols-4 gap-4 py-4 border-t border-neutral-900 tm"
                       key={typeIndex}
                     >
-                      <div className="text-left  xxs-xs:text-xs">{typeItem.subTitle}</div>
+                      <div className="text-left  xxs-xs:text-xs">
+                        {typeItem.subTitle}
+                      </div>
                       {typeItem.details.map((detail, detailIndex) => (
                         <div className="flex justify-center " key={detailIndex}>
-                          {detail === "Yes" ? <FaRegCheckCircle className="text-[#00fb33]"/> : detail === "" ?<ImCross className="text-[#734545]"/> : detail}
-                          
+                          {detail === "Yes" ? (
+                            <FaRegCheckCircle className="text-[#00fb33]" />
+                          ) : detail === "" ? (
+                            <ImCross className="text-[#734545]" />
+                          ) : (
+                            detail
+                          )}
                         </div>
                       ))}
                     </div>

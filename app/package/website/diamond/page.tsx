@@ -4,6 +4,7 @@ import { website } from "@/constants/packagesData";
 import React from "react";
 import { FaRegCheckCircle } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
+import WebsiteHeader from "../../components/WebsiteHeader";
 
 interface PackageType {
   subTitle: string;
@@ -24,24 +25,11 @@ interface WebsiteGoldPackage {
 const PricingPage: React.FC = () => {
   return (
     <div className="bg-black text-white p-4 sm:p-8 min-h-screen max-w-screen-xl mx-auto w-full cp">
-     
-      <header className="  common-height common-margin  mt-28 sticky     top-0 z-50 bg-black">
-        <h1 className="website-package-header">
-        Website Diamond Package
-      </h1>
-        {/* Top Header */}
-        <div className="grid grid-cols-2 gap-4  py-4 text-lg text-neutral-500 uppercase  common-size">
-          <div className="text-left font-bold">Features</div>
-          <div className="text-center font-bold">
-            Price Based On Project Scope
-          </div>
-        </div>
-        {/* Pricing Header */}
-        <div className="grid grid-cols-2 gap-4 py-4 smp2 xxs-xs:pb-1 tm">
-          <div></div>
-          <div className="text-center">Start at ₹1,50,000+</div>
-        </div>
-      </header>
+      <WebsiteHeader
+        title="Website Diamond Package"
+        features={["Features", "Price Based On Project Scope"]}
+        pricing={["", "Start at ₹1,50,000+"]}
+      />
 
       {/* Body */}
       <div>
@@ -75,8 +63,13 @@ const PricingPage: React.FC = () => {
                       <div className="text-left ">{typeItem.subTitle}</div>
                       {typeItem.details.map((detail, detailIndex) => (
                         <div className="flex justify-center " key={detailIndex}>
-                                                   {detail === "Yes" ? <FaRegCheckCircle className="text-[#00fb33]"/> : detail === "" ?<ImCross className="text-[#734545]"/> : detail}
-
+                          {detail === "Yes" ? (
+                            <FaRegCheckCircle className="text-[#00fb33]" />
+                          ) : detail === "" ? (
+                            <ImCross className="text-[#734545]" />
+                          ) : (
+                            detail
+                          )}
                         </div>
                       ))}
                     </div>

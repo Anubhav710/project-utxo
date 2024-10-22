@@ -4,6 +4,7 @@ import { website } from "@/constants/packagesData";
 import React from "react";
 import { FaRegCheckCircle } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
+import WebsiteHeader from "../../components/WebsiteHeader";
 
 interface PackageType {
   subTitle: string;
@@ -24,26 +25,16 @@ interface WebsiteGoldPackage {
 const PricingPage: React.FC = () => {
   return (
     <div className="bg-black text-white p-4 sm:p-8 min-h-screen max-w-screen-xl mx-auto w-full cp">
-      
-      <header className=" common-margin  common-height  sticky  top-0 z-50 bg-black">
-      <h1 className="  website-package-header">
-        Website Gold Package
-      </h1>
-        {/* Top Header */ }
-        <div className="grid grid-cols-4 gap-4 py-4  common-size text-lg text-neutral-500 uppercase tm">
-          <div className="text-left font-bold">Features</div>
-          <div className="text-center font-bold">Basic</div>
-          <div className="text-center font-bold">Premium</div>
-          <div className="text-center font-bold">Advance</div>
-        </div>
-        {/* Pricing Header */}
-        <div className="grid grid-cols-4 gap-4 py-3 xxs-xs:mb-1  tm">
-          <div></div>
-          <div className="text-center">₹55,000 / Month</div>
-          <div className="text-center">₹95,000 / Month</div>
-          <div className="text-center">₹1,20,000 / Month</div>
-        </div>
-      </header>
+      <WebsiteHeader
+        title="Website Gold Package"
+        features={["Features", "Basic", "Premium", "Advance"]}
+        pricing={[
+          "",
+          "₹55,000 / Month",
+          "₹95,000 / Month",
+          "₹1,20,000 / Month",
+        ]}
+      />
 
       {/* Body */}
       <div>
@@ -66,7 +57,6 @@ const PricingPage: React.FC = () => {
                     <div className="text-left font-semibold text-2xl xxs-xs:text-[1.25rem]">
                       {currentSection.title}
                     </div>
-                   
                   </div>
 
                   {/* Section Body */}
@@ -78,8 +68,13 @@ const PricingPage: React.FC = () => {
                       <div className="text-left">{typeItem.subTitle}</div>
                       {typeItem.details.map((detail, detailIndex) => (
                         <div className="flex justify-center " key={detailIndex}>
-                            {detail === "Yes" ? <FaRegCheckCircle className="text-[#00fb33]"/> : detail === "" ?<ImCross className="text-[#734545]"/> : detail}
-
+                          {detail === "Yes" ? (
+                            <FaRegCheckCircle className="text-[#00fb33]" />
+                          ) : detail === "" ? (
+                            <ImCross className="text-[#734545]" />
+                          ) : (
+                            detail
+                          )}
                         </div>
                       ))}
                     </div>

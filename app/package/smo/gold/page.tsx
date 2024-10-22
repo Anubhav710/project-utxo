@@ -4,6 +4,7 @@ import { smo } from "@/constants/packagesData";
 import React from "react";
 import { FaRegCheckCircle } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
+import SmoHeader from "../../components/SmoHeader";
 
 // Define TypeScript types based on the provided data structure
 interface PackageType {
@@ -33,21 +34,11 @@ const PricingPage: React.FC = () => {
   return (
     <div className="bg-black  text-white p-4 sm:p-8 min-h-screen max-w-screen-xl mx-auto w-full cp">
       {/* Header Section */}
-      <header className="sticky smo-common-height smo-common-margin top-0 z-50 bg-black">
-        <h1 className="smo-package-header pt-5   font-bold text-center mb-4 sm:mb-6">
-          SMO Gold Package
-        </h1>
-        <div className="grid grid-cols-2 gap-4 py-3 text-neutral-500 uppercase smo-common-size">
-          <div className="text-left font-bold">Features</div>
-          <div className="text-center font-bold">Gold</div>
-        </div>
-
-        {/* Pricing Header */}
-        <div className="grid grid-cols-2 gap-4 py-3">
-          <div className="text-center"></div>
-          <div className="text-center">₹24,000 / Month</div>
-        </div>
-      </header>
+      <SmoHeader
+        title="SMO Gold Package"
+        features={["Features", "Gold"]}
+        pricing={["", "₹24,000 / Month"]}
+      />
 
       {/* Body */}
       <div>

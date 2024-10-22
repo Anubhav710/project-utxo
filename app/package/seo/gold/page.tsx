@@ -4,6 +4,7 @@ import { seoPackage } from "@/constants/packagesData";
 import React from "react";
 import { FaRegCheckCircle } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
+import SeoHeader from "../../components/SeoHeader";
 
 // Define TypeScript types based on the provided data structure
 interface PackageType {
@@ -33,23 +34,11 @@ const PricingPage: React.FC = () => {
   return (
     <div className="bg-black text-white p-4 sm:p-8 min-h-screen max-w-screen-xl mx-auto w-full cp">
       {/* Header Section */}
-      <header className="sticky seo-common-margin seo-common-height  top-0 z-50 bg-black">
-        <h1 className=" pt-5 seo-package-header font-bold text-center mb-4 sm:mb-6">
-          SEO Gold Package
-        </h1>
-        <div className="grid grid-cols-3 gap-4 py-1 xxs-xs:text-sm text-lg text-neutral-500 uppercase seo-common-size">
-          <div className="text-left font-bold">Features</div>
-          <div className="text-center font-bold">Basic</div>
-          <div className="text-center font-bold">Advance</div>
-        </div>
-
-        {/* Pricing Header */}
-        <div className="grid grid-cols-3 gap-4 py-1">
-          <div></div>
-          <div className="text-center">₹50,000 / Month</div>
-          <div className="text-center">₹80,000 / Month</div>
-        </div>
-      </header>
+      <SeoHeader
+        title="SEO Gold Package"
+        features={["Features", "Basic", "Advance"]}
+        pricing={["", "₹50,000 / Month", "₹80,000 / Month"]}
+      />
 
       {/* Body */}
       <div>

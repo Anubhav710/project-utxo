@@ -58,7 +58,7 @@ const PricingPage: React.FC = () => {
                 >
                   {/* Section Header */}
                   <div className=" seo-common-sitcky-header  bg-black">
-                    <div className="text-left md:text-2xl text-xl py-2 font-semibold ">
+                    <div className=" common-heading-all  ">
                       {currentSection.title}
                     </div>
                   </div>
@@ -66,7 +66,7 @@ const PricingPage: React.FC = () => {
                   {/* Section Body */}
                   {currentSection.type.map((typeItem, typeIndex) => (
                     <div
-                      className="grid grid-cols-3 gap-4 py-4 border-t border-neutral-900"
+                      className="grid grid-cols-3 common-para-all gap-4 py-4 border-t border-neutral-900"
                       key={typeIndex}
                     >
                       <div className="text-left">{typeItem.subTitle}</div>

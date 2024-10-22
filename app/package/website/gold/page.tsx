@@ -54,7 +54,7 @@ const PricingPage: React.FC = () => {
                 >
                   {/* Section Header */}
                   <div className=" gap-4 py-4 sticky top-[180px]  z-40 bg-black">
-                    <div className="text-left font-semibold text-2xl xxs-xs:text-[1.25rem]">
+                    <div className=" common-heading-all">
                       {currentSection.title}
                     </div>
                   </div>
@@ -62,10 +62,10 @@ const PricingPage: React.FC = () => {
                   {/* Section Body */}
                   {currentSection.type.map((typeItem, typeIndex) => (
                     <div
-                      className="grid grid-cols-4 gap-4 py-4 border-t border-neutral-900 tm"
+                      className="grid common-para-all grid-cols-4 gap-4 py-4 border-t border-neutral-900 tm"
                       key={typeIndex}
                     >
-                      <div className="text-left">{typeItem.subTitle}</div>
+                      <div className=" ">{typeItem.subTitle}</div>
                       {typeItem.details.map((detail, detailIndex) => (
                         <div className="flex justify-center " key={detailIndex}>
                           {detail === "Yes" ? (

@@ -64,8 +64,8 @@ const PricingPage: React.FC = () => {
                   className="border-t border-t-neutral-600"
                 >
                   {/* Section Header */}
-                  <div className="gap-4 py-4 meta-ads-common-sticky-header z-40 bg-black">
-                    <div className="text-left font-semibold md:text-2xl text-xl">
+                  <div className="gap-4 py-4 common-para-all meta-ads-common-sticky-header z-40 bg-black">
+                    <div className="common-heading-all">
                       {currentSection.title}
                     </div>
                   </div>

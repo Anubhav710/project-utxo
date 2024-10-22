@@ -79,6 +79,12 @@ export const metadata: Metadata = {
   },
 };
 
+// Add the following lines for apple-touch-icon and apple-touch-startup-image
+export const appleIcons = [
+  { rel: "apple-touch-icon", href: "/images/fav.jpg" },
+  { rel: "apple-touch-startup-image", href: "/images/fav.jpg" },
+];
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -99,6 +105,11 @@ export default function RootLayout({
         <meta
           name="facebook-domain-verification"
           content="usxolc3084tpt8qu3tw98f6go6354g"
+        />
+        <link rel="apple-touch-icon" href="/images/apple-touch -icon.jpg" />
+        <link
+          rel="apple-touch-startup-image"
+          href="/images/apple-touch startup-image.jpg"
         />
       </head>
       <body className={`${myFont2.className} antialiased`}>

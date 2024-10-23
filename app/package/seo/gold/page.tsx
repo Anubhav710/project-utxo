@@ -58,7 +58,7 @@ const PricingPage: React.FC = () => {
                 >
                   {/* Section Header */}
                   <div className=" seo-common-sitcky-header bg-black">
-                    <div className="common-heading-all">
+                    <div className="common-heading-all ">
                       {currentSection.title}
                     </div>
                   </div>

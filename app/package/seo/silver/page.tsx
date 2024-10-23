@@ -38,6 +38,7 @@ const PricingPage: React.FC = () => {
         title="SEO Silver Package"
         features={["Features", "Basic", "Advance"]}
         pricing={["", "₹20,000 / Month", "₹30,000 / Month"]}
+        isDiamond={false}
       />
 
       {/* Body */}
@@ -58,7 +59,7 @@ const PricingPage: React.FC = () => {
                 >
                   {/* Section Header */}
                   <div className=" seo-common-sitcky-header  bg-black">
-                    <div className=" common-heading-all  ">
+                    <div className=" common-heading-all   ">
                       {currentSection.title}
                     </div>
                   </div>
@@ -69,7 +70,7 @@ const PricingPage: React.FC = () => {
                       className="grid grid-cols-3 common-para-all gap-4 py-4 border-t border-neutral-900"
                       key={typeIndex}
                     >
-                      <div className="text-left">{typeItem.subTitle}</div>
+                      <div className="text-left ">{typeItem.subTitle}</div>
                       {typeItem.details.map((detail, detailIndex) => (
                         <div className="flex justify-center " key={detailIndex}>
                           {detail === "Yes" ? (

@@ -38,6 +38,7 @@ const PricingPage: React.FC = () => {
         title="SEO Diamond Package"
         features={["Features", "Diamond"]}
         pricing={["", "₹1,00,000"]}
+        isDiamond={true}
       />
 
       {/* Body */}
@@ -57,7 +58,7 @@ const PricingPage: React.FC = () => {
                   className="border-t border-t-neutral-600"
                 >
                   {/* Section Header */}
-                  <div className=" gap-4 py-4 seo-common-sitcky-header bg-black">
+                  <div className=" seo-common-sitcky-header bg-black">
                     <div className="common-heading-all ">
                       {currentSection.title}
                     </div>

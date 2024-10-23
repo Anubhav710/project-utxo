@@ -1,18 +1,29 @@
 import React from "react";
 
-interface SeoHeaderProps {
+interface SmoHeaderProps {
   title: string;
   features: string[];
   pricing: string[];
+  isDiamond?: boolean;
+  className?: string;
 }
 
-const SeoHeader: React.FC<SeoHeaderProps> = ({ title, features, pricing }) => {
+const SmoHeader: React.FC<SmoHeaderProps> = ({
+  title,
+  features,
+  pricing,
+  isDiamond,
+  className,
+}) => {
   return (
-    <header className="sticky seo-common-margin seo-common-height top-0 z-50 bg-black">
-      <h1 className="pt-5 seo-package-header font-bold text-center mb-4 sm:mb-6">
-        {title}
-      </h1>
-      <div className="grid grid-cols-3 gap-4 py-1 xxs-xs:text-sm text-lg text-neutral-500 uppercase seo-common-size">
+    <header className="common-margin common-height sticky top-0 z-50 bg-black">
+      <h1 className="smo-package-header">{title}</h1>
+      {/* Top Header */}
+      <div
+        className={`${
+          isDiamond ? "grid grid-cols-2" : "grid grid-cols-3"
+        } ${className}  gap-4 py-4 text-neutral-500 uppercase`}
+      >
         {features.map((feature, index) => (
           <div
             key={index}
@@ -22,11 +33,14 @@ const SeoHeader: React.FC<SeoHeaderProps> = ({ title, features, pricing }) => {
           </div>
         ))}
       </div>
-
       {/* Pricing Header */}
-      <div className="grid grid-cols-3 gap-4 py-1">
+      <div
+        className={` gap-4 py-4 xxs-xs:pb-1 tm ${
+          isDiamond ? "grid grid-cols-2" : "grid grid-cols-3"
+        }`}
+      >
         {pricing.map((price, index) => (
-          <div key={index} className={`${index === 0 ? "" : "text-center"}`}>
+          <div key={index} className="text-center">
             {price}
           </div>
         ))}
@@ -35,4 +49,4 @@ const SeoHeader: React.FC<SeoHeaderProps> = ({ title, features, pricing }) => {
   );
 };
 
-export default SeoHeader;
+export default SmoHeader;

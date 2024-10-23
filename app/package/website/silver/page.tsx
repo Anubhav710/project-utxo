@@ -29,7 +29,7 @@ const PricingPage: React.FC = () => {
       <WebsiteHeader
         title="Website Silver Package"
         features={["Features", "Basic", "Premium", "Advance"]}
-        pricing={["", "₹15,000 / Month", "₹25,000 / Month", "₹35,000 / Month"]}
+        pricing={["", "₹15,000 ", "₹25,000 ", "₹35,000 "]}
       />
 
       {/* Body */}

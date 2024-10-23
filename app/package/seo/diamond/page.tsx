@@ -37,7 +37,7 @@ const PricingPage: React.FC = () => {
       <SeoHeader
         title="SEO Diamond Package"
         features={["Features", "Diamond"]}
-        pricing={["", "₹1,00,000"]}
+        pricing={["", "Start at ₹1,00,000+"]}
         isDiamond={true}
       />
 

@@ -7,6 +7,9 @@ import { myFont } from "@/fonts";
 import Image from "next/image";
 import { container } from "@/constants";
 import Cursor from "../cursor";
+import { FaPhoneAlt } from "react-icons/fa";
+import Link from "next/link";
+import { MdEmail } from "react-icons/md";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -101,6 +104,16 @@ const Hero = () => {
   return (
     <section id="hero" className=" relative ">
       <Cursor />
+      <div className="absolute top-5 rounded-tl-xl rounded-bl-xl   right-0  space-y-3  py-4 pl-4 w-72 nav text-white z-[999]">
+        <div className="flex items-center gap-2">
+          <FaPhoneAlt className="w-6 h-6" />
+          <Link href={"tel:+91-9266967128"}>+91-9266967128</Link>
+        </div>
+        <div className="flex items-center gap-2">
+          <MdEmail className="w-6 h-6" />
+          <Link href={"mailto:info@utxotech.com"}>info@utxotech.com</Link>
+        </div>
+      </div>
       {/* CONATINER  */}
       <div className=" bg-black  h-screen w-full flex flex-col items-center overflow-hidden relative  scale-[1]      ">
         <div className="absolute inset-0 h-full w-full bg-gradient-to-b from-black/40 to-black/20 z-20"></div>

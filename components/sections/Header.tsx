@@ -5,6 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
+import { FaPhoneAlt } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 interface Position {
   left: number;
@@ -106,7 +108,20 @@ const Header: React.FC = () => {
         >
           Contact
         </Tab>
-
+        <div className="flex gap-5 text-white">
+          <div className="flex items-center gap-2">
+            <FaPhoneAlt className="w-3 h-3" />
+            <Link href={"tel:+91-9266967128"} className="text-sm">
+              +91-9266967128
+            </Link>
+          </div>
+          <div className="flex items-center gap-2">
+            <MdEmail className="w-3 h-3" />
+            <Link className="text-sm" href={"mailto:info@utxotech.com"}>
+              info@utxotech.com
+            </Link>
+          </div>
+        </div>
         <Cursor position={position} />
       </ul>
       <div className=" flex-col nav xxs-xs:flex hidden text-white rounded-full items-center  w-max mx-auto  py-[7px] px-[30px]">
@@ -142,6 +157,21 @@ const Header: React.FC = () => {
             <li> Contact</li>
           </Link>
         </ul>
+        {/* here is contact details i have to add..   */}
+        <div className="flex gap-5">
+          <div className="flex items-center gap-2">
+            <FaPhoneAlt className="w-3 h-3" />
+            <Link href={"tel:+91-9266967128"} className="text-sm">
+              +91-9266967128
+            </Link>
+          </div>
+          <div className="flex items-center gap-2">
+            <MdEmail className="w-3 h-3" />
+            <Link className="text-sm" href={"mailto:info@utxotech.com"}>
+              info@utxotech.com
+            </Link>
+          </div>
+        </div>
       </div>
     </motion.header>
   );

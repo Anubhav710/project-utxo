@@ -1,5 +1,12 @@
 import { myFont2 } from "@/fonts";
 import Footer from "./Footer";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  other: {
+    robots: "noindex, nofollow",
+  },
+};
 
 export default function PageLayout({
   children,

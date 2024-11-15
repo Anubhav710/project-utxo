@@ -24,7 +24,9 @@ const Footer = () => {
               <MdEmail className="w-6 h-6" />
               <Link href={"mailto:info@utxotech.com"}>info@utxotech.com</Link>
             </div>
-            <Link href={"/privacy-policy"}>PrivacyPolicy</Link>
+            <Link href={"/privacy-policy"} className="cursor-pointer">
+              PrivacyPolicy
+            </Link>
           </div>
 
           {/* Social Icons */}

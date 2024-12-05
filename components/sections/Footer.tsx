@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { AiFillInstagram } from "react-icons/ai";
@@ -26,6 +25,9 @@ const Footer = () => {
             </div>
             <Link href={"/privacy-policy"} className="cursor-pointer">
               PrivacyPolicy
+            </Link>
+            <Link href={"/terms-condition"} className="cursor-pointer">
+              Terms and Condition
             </Link>
           </div>
 

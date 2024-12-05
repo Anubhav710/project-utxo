@@ -17,7 +17,7 @@
   }
 
   .img-c {
-    @apply h-[calc(100%/6)] w-full rounded-md overflow-hidden relative;
+    @apply h-[calc(100%/6)]  rounded-md overflow-hidden relative;
   }
 
   .s {

@@ -128,3 +128,7 @@
 .common-para-all{
   @apply text-left  xxs-xs:text-xs 
 }
+
+.padding-top{
+  @apply pt-[9rem]
+}

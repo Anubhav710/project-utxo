@@ -119,7 +119,7 @@ const termsAndConditions = {
       subContent: [],
     },
     {
-      title: "12. INTELLECTUAL PROPERTY RIGHTS",
+      title: "INTELLECTUAL PROPERTY RIGHTS",
       subHeading: "",
       content: [
         "UTXO Web Tech retains all Intellectual Property rights to any materials created during the provision of Digital Services.",
@@ -129,7 +129,7 @@ const termsAndConditions = {
       subContent: [],
     },
     {
-      title: "13. GRAPHIC DESIGN SERVICES",
+      title: "GRAPHIC DESIGN SERVICES",
       subHeading: "",
       content: [
         "UTXO Web Tech retains all Intellectual Property rights to any graphic design materials created during the provision of Graphic Design Services.",
@@ -242,7 +242,7 @@ const termsAndConditions = {
 
 const TermsCondition = () => {
   return (
-    <div className="min-h-screen bg-neutral-950 py-28">
+    <div className="min-h-screen bg-neutral-950 padding-top">
       <div className="max-w-screen-lg mx-auto space-y-12 text-white">
         <h1 className="text-7xl font-bold text-center">
           {termsAndConditions.title}

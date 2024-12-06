@@ -2,12 +2,12 @@ import React from "react";
 
 const PrivacyPolicy = () => {
   return (
-    <div className="min-h-screen bg-neutral-950 py-28 ">
-      <div className="max-w-screen-lg mx-auto space-y-12">
-        <h1 className="text-center text-7xl text-white font-bold  pt-5">
+    <section className="min-h-screen bg-neutral-950 padding-top">
+      <div className="max-w-screen-lg mx-auto space-y-12 ">
+        <h1 className="text-center text-7xl text-white font-bold ">
           Privacy Policy
         </h1>
-        <div className="space-y-5">
+        <div>
           <p className="text-white text-xl leading-8">
             UTXO Web Tech, is the data controller of your personal data. We have
             adopted this Privacy Policy, which determines how we process the
@@ -118,7 +118,7 @@ const PrivacyPolicy = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

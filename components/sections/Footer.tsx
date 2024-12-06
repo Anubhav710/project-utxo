@@ -27,7 +27,7 @@ const Footer = () => {
               PrivacyPolicy
             </Link>
             <Link href={"/terms-condition"} className="cursor-pointer">
-              Terms and Condition
+              Terms and Conditions
             </Link>
           </div>
 

@@ -248,7 +248,7 @@ const TermsCondition = () => {
           {termsAndConditions.title}
         </h1>
         {termsAndConditions.sections.map((section, index) => (
-          <div key={index} className="space-y-2">
+          <div key={index} className="space-y-2 ">
             <h2 className="text-3xl flex gap-4 font-bold">
               <h3>{section.title}</h3>
             </h2>
@@ -260,7 +260,7 @@ const TermsCondition = () => {
             ) : (
               <ul className="pl-7">
                 {section.content.map((paragraph, idx) => (
-                  <li key={idx} className="list-disc">
+                  <li key={idx} className="list-disc text-xl">
                     {paragraph}
                   </li>
                 ))}
@@ -271,7 +271,7 @@ const TermsCondition = () => {
             ) : (
               <ul className="pl-14">
                 {section.subContent.map((paragraph, idx) => (
-                  <li key={idx} className="list-[circle]">
+                  <li key={idx} className="list-[circle] text-xl">
                     {paragraph}
                   </li>
                 ))}

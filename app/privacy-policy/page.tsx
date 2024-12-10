@@ -1,12 +1,13 @@
 import React from "react";
 import Footer from "../package/Footer";
+import { myFont } from "@/fonts";
 
 const PrivacyPolicy = () => {
   return (
     <section className="min-h-screen bg-black padding-top ">
       <div className="max-w-screen-lg mx-auto space-y-12 padding-x">
         <h1
-          className={`text-center  text-white font-bold term-condition-heading`}
+          className={`text-center  text-white font-bold term-condition-heading ${myFont.className}`}
         >
           Privacy Policy
         </h1>

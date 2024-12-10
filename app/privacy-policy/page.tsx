@@ -1,10 +1,13 @@
 import React from "react";
+import Footer from "../package/Footer";
 
 const PrivacyPolicy = () => {
   return (
-    <section className="min-h-screen bg-neutral-950 padding-top">
-      <div className="max-w-screen-lg mx-auto space-y-12 ">
-        <h1 className="text-center text-7xl text-white font-bold ">
+    <section className="min-h-screen bg-black padding-top ">
+      <div className="max-w-screen-lg mx-auto space-y-12 padding-x">
+        <h1
+          className={`text-center  text-white font-bold term-condition-heading`}
+        >
           Privacy Policy
         </h1>
         <div>
@@ -25,7 +28,7 @@ const PrivacyPolicy = () => {
             Information.
           </p>
           <div className="pt-5">
-            <h1 className="text-white text-5xl font-semibold ">
+            <h1 className="text-white text-3xl font-bold ">
               Why do we process your data?
             </h1>
             <p className="text-white text-xl leading-8 pt-5">
@@ -40,7 +43,7 @@ const PrivacyPolicy = () => {
             </p>
           </div>
           <div className="pt-5">
-            <h1 className="text-white text-5xl font-semibold ">Your rights</h1>
+            <h1 className="text-white text-3xl font-bold ">Your rights</h1>
             <p className="text-white text-xl leading-8 pt-5">
               If you are a resident of a region with applicable data protection
               laws, you have the following rights related to your personal data:
@@ -73,7 +76,7 @@ const PrivacyPolicy = () => {
             </p>
           </div>
           <div className="pt-5">
-            <h1 className="text-white text-5xl font-semibold ">
+            <h1 className="text-white text-3xl font-bold ">
               Information security
             </h1>
             <p className="text-white text-xl leading-8 pt-5">
@@ -87,9 +90,7 @@ const PrivacyPolicy = () => {
             </p>
           </div>
           <div className="pt-5">
-            <h1 className="text-white text-5xl font-semibold ">
-              Legal disclosure
-            </h1>
+            <h1 className="text-white text-3xl font-bold ">Legal disclosure</h1>
             <p className="text-white text-xl leading-8 pt-5">
               We will disclose any information we collect, use or receive if
               required or permitted by law, such as to comply with a subpoena or
@@ -100,23 +101,26 @@ const PrivacyPolicy = () => {
             </p>
           </div>
           <div className="pt-5">
-            <h1 className="text-white text-5xl font-semibold ">
+            <h1 className="text-white text-3xl font-bold ">
               Contact information
             </h1>
             <p className="text-white text-xl leading-8 pt-5">
               If you would like to contact us to understand more about this
               Policy or wish to contact us concerning any matter relating to
               individual rights and your Personal Information, you may send an
-              email to [insert contact email].
+              email to info@utxotech.com.
             </p>
           </div>
           <div className="pt-5">
-            <h1 className="text-white text-5xl font-semibold ">Address</h1>
+            <h1 className="text-white text-3xl font-bold ">Address</h1>
             <p className="text-white text-xl leading-8 pt-5">
               B-64, B Block, Sector 63, Noida, Uttar Pradesh 201301
             </p>
           </div>
         </div>
+      </div>
+      <div className="pt-16">
+        <Footer />
       </div>
     </section>
   );

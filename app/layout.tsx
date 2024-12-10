@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import dynamic from "next/dynamic";
 import { myFont2 } from "@/fonts";
+import Footer from "./package/Footer";
 const HeaderNoSSR = dynamic(() => import("@/components/sections/Header"), {
   ssr: false,
 });

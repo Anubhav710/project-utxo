@@ -1,10 +1,12 @@
 import React from "react";
+import Footer from "../package/Footer";
+import { myFont } from "@/fonts";
 
 const termsAndConditions = {
-  title: "TERMS AND CONDITIONS ",
+  title: "Terms and Conditions",
   sections: [
     {
-      title: "USE OF WEBSITE",
+      title: "Use of Website",
       subHeading: "",
       content: [
         "The Website is provided for general information purposes only and is not intended to provide specific advice or guidance.",
@@ -14,7 +16,7 @@ const termsAndConditions = {
       subContent: [],
     },
     {
-      title: "DATA PROTECTION",
+      title: "Data Protection",
       subHeading: "",
       content: [
         "UTXO Web Tech will take reasonable steps to securely store and protect your data.",
@@ -23,7 +25,7 @@ const termsAndConditions = {
       subContent: [],
     },
     {
-      title: "LINKS TO OTHER WEBSITES",
+      title: "Links to Other Websites",
       subHeading: "",
       content: [
         "The Website may contain links to other websites that are not under the control of UTXO Web Tech.",
@@ -32,7 +34,7 @@ const termsAndConditions = {
       subContent: [],
     },
     {
-      title: "DISCLAIMER OF WARRANTIES",
+      title: "Disclaimer of Warranties",
       subHeading: "",
       content: [
         "The Website is provided on an “as is” and “as available” basis.",
@@ -41,7 +43,7 @@ const termsAndConditions = {
       subContent: [],
     },
     {
-      title: "LIMITATION OF LIABILITY",
+      title: "Limitation of Liability",
       subHeading: "",
       content: [
         "UTXO Web Tech will not be liable for any damages, including but not limited to incidental, consequential, or punitive damages, arising out of or related to your use of the Website.",
@@ -50,7 +52,7 @@ const termsAndConditions = {
       subContent: [],
     },
     {
-      title: "AGREEMENT",
+      title: "Agreement",
       subHeading: "",
       content: [
         "By entering into an agreement with UTXO Web Tech, you acknowledge that you have read, understood, and agreed to be bound by these Terms and Conditions.",
@@ -59,7 +61,7 @@ const termsAndConditions = {
       subContent: [],
     },
     {
-      title: "DEFINITIONS",
+      title: "Definitions",
       subHeading:
         "In these Terms and Conditions, the following definitions apply :",
       content: [
@@ -75,7 +77,7 @@ const termsAndConditions = {
       subContent: [],
     },
     {
-      title: "SERVICES",
+      title: "Services",
       subHeading: "",
       content: [
         "UTXO Web Tech provides a range of Digital Services, including but not limited to web design, development, and maintenance, SEO, SMO, PPC, graphic design, and content creation.",
@@ -92,7 +94,7 @@ const termsAndConditions = {
       ],
     },
     {
-      title: "PAYMENT TERMS",
+      title: "Payment Terms",
       subHeading: "",
       content: [
         "Payment terms will be as agreed upon in the agreement.",
@@ -101,7 +103,7 @@ const termsAndConditions = {
       subContent: [],
     },
     {
-      title: "CANCELLATION AND TERMINATION",
+      title: "Cancellation and Termination",
       subHeading: "",
       content: [
         "Cancellations must be made in writing and may be subject to additional fees and penalties.",
@@ -110,7 +112,7 @@ const termsAndConditions = {
       subContent: [],
     },
     {
-      title: "CONFIDENTIALITY",
+      title: "Confidentiality",
       subHeading: "",
       content: [
         "UTXO Web Tech will maintain the confidentiality of your information and will not disclose it to any third party without prior written consent.",
@@ -119,7 +121,7 @@ const termsAndConditions = {
       subContent: [],
     },
     {
-      title: "INTELLECTUAL PROPERTY RIGHTS",
+      title: "Intellectual Property Rights",
       subHeading: "",
       content: [
         "UTXO Web Tech retains all Intellectual Property rights to any materials created during the provision of Digital Services.",
@@ -129,7 +131,7 @@ const termsAndConditions = {
       subContent: [],
     },
     {
-      title: "GRAPHIC DESIGN SERVICES",
+      title: "Graphic Design Services",
       subHeading: "",
       content: [
         "UTXO Web Tech retains all Intellectual Property rights to any graphic design materials created during the provision of Graphic Design Services.",
@@ -139,7 +141,7 @@ const termsAndConditions = {
       subContent: [],
     },
     {
-      title: "INDEMNIFICATION",
+      title: "Indemnification",
       subHeading: "",
       content: [
         "The Client agrees to indemnify and hold harmless UTXO Web Tech, its officers, directors, employees, and agents from and against any and all claims, damages, losses, and expenses (including but not limited to reasonable attorneys’ fees) arising out of or related to the Client’s breach of these Terms and Conditions or the Client’s use of the Services.",
@@ -147,7 +149,7 @@ const termsAndConditions = {
       subContent: [],
     },
     {
-      title: "LIMITATION OF LIABILITY FOR CONSEQUENTIAL DAMAGES",
+      title: "Limitation of Liability for Consequential Damages",
       subHeading: "",
       content: [
         "UTXO Web Tech will not be liable for any consequential, indirect, special, punitive, or incidental damages arising out of or related to the Services, including but not limited to loss of profits, loss of business, or loss of data.",
@@ -155,7 +157,7 @@ const termsAndConditions = {
       subContent: [],
     },
     {
-      title: "EXCLUSION OF IMPLIED WARRANTIES",
+      title: "Exclusion of Implied Warranties",
       subHeading: "",
       content: [
         "UTXO Web Tech excludes all implied warranties, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement.",
@@ -163,7 +165,7 @@ const termsAndConditions = {
       subContent: [],
     },
     {
-      title: "LIMITATION OF LIABILITY FOR THIRD-PARTY CLAIMS",
+      title: "Limitation of Liability for Third-Party Claims",
       subHeading: "",
       content: [
         "UTXO Web Tech will not be liable for any claims, damages, losses, or expenses arising out of or related to the actions or omissions of third parties, including but not limited to other users of the Services.",
@@ -171,7 +173,7 @@ const termsAndConditions = {
       subContent: [],
     },
     {
-      title: "GOVERNING LAW FOR DISPUTES",
+      title: "Governing Law for Disputes",
       subHeading: "",
       content: [
         "Any disputes arising out of or related to these Terms and Conditions will be governed by and construed in accordance with the laws of India.",
@@ -179,7 +181,7 @@ const termsAndConditions = {
       subContent: [],
     },
     {
-      title: "JURISDICTION FOR DISPUTES",
+      title: "Jurisdiction for Disputes",
       subHeading: "",
       content: [
         "Any disputes arising out of or related to these Terms and Conditions will be resolved through arbitration in Noida, Uttar Pradesh, India.",
@@ -187,7 +189,7 @@ const termsAndConditions = {
       subContent: [],
     },
     {
-      title: "ENTIRE AGREEMENT FOR DISPUTES",
+      title: "Entire Agreement for Disputes",
       subHeading: "",
       content: [
         "These Terms and Conditions constitute the entire agreement between UTXO Web Tech and the Client with respect to the Services and supersede all prior or contemporaneous agreements or understandings.",
@@ -195,7 +197,7 @@ const termsAndConditions = {
       subContent: [],
     },
     {
-      title: "NO WAIVER",
+      title: "No Waiver",
       subHeading: "",
       content: [
         "UTXO Web Tech’s failure to enforce any provision of these Terms and Conditions will not be deemed a waiver of such provision or of any other provision.",
@@ -203,7 +205,7 @@ const termsAndConditions = {
       subContent: [],
     },
     {
-      title: "SEVERABILITY FOR DISPUTES",
+      title: "Severability for Disputes",
       subHeading: "",
       content: [
         "If any provision of these Terms and Conditions is held to be invalid or unenforceable, the remaining provisions will remain in effect.",
@@ -211,7 +213,7 @@ const termsAndConditions = {
       subContent: [],
     },
     {
-      title: "AMENDMENTS FOR DISPUTES",
+      title: "Amendments for Disputes",
       subHeading: "",
       content: [
         "UTXO Web Tech reserves the right to modify or update these Terms and Conditions at any time without notice, and any changes will be effective immediately upon posting on the Website.",
@@ -220,7 +222,7 @@ const termsAndConditions = {
     },
 
     {
-      title: "NOTICES FOR DISPUTES",
+      title: "Notices for Disputes",
       subHeading: "",
       content: [
         "Any notices required or permitted to be given under these Terms and Conditions will be in writing and will be delivered personally, sent by certified mail, or sent by email.",
@@ -228,7 +230,7 @@ const termsAndConditions = {
       subContent: [],
     },
     {
-      title: "FORCE MAJEURE",
+      title: "Force Majeure",
       subHeading: "",
       content: [
         "UTXO Web Tech will not be liable for any failure or delay in performing its obligations under these Terms and Conditions if such failure or delay is caused by circumstances beyond its reasonable control.",
@@ -242,14 +244,16 @@ const termsAndConditions = {
 
 const TermsCondition = () => {
   return (
-    <div className="min-h-screen bg-neutral-950 padding-top">
+    <div className="min-h-screen bg-black padding-top padding-x">
       <div className="max-w-screen-lg mx-auto space-y-12 text-white">
-        <h1 className="text-7xl font-bold text-center">
+        <h1
+          className={`font-bold text-center term-condition-heading  ${myFont.className}`}
+        >
           {termsAndConditions.title}
         </h1>
         {termsAndConditions.sections.map((section, index) => (
           <div key={index} className="space-y-2 ">
-            <h2 className="text-3xl flex gap-4 font-bold">
+            <h2 className="text-3xl  flex gap-4 font-bold">
               <h3>{section.title}</h3>
             </h2>
             {section.subHeading && (
@@ -280,6 +284,9 @@ const TermsCondition = () => {
           </div>
         ))}
         <p>{termsAndConditions.conclusion}</p>
+      </div>
+      <div className="pt-16">
+        <Footer />
       </div>
     </div>
   );

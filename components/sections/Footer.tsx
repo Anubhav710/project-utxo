@@ -24,9 +24,9 @@ const Footer = () => {
               <Link href={"mailto:info@utxotech.com"}>info@utxotech.com</Link>
             </div>
             <Link href={"/privacy-policy"} className="cursor-pointer">
-              PrivacyPolicy
+              Privacy Policy
             </Link>
-            <Link href={"/terms-condition"} className="cursor-pointer">
+            <Link href={"/terms-and-conditions"} className="cursor-pointer">
               Terms and Conditions
             </Link>
           </div>

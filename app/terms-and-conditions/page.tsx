@@ -3,7 +3,7 @@ import Footer from "../package/Footer";
 import { myFont } from "@/fonts";
 
 const termsAndConditions = {
-  title: "Terms and Conditions",
+  title: "Terms and Conditions of UTXO Web Tech",
   sections: [
     {
       title: "Use of Website",
@@ -55,7 +55,7 @@ const termsAndConditions = {
       title: "Agreement",
       subHeading: "",
       content: [
-        "By entering into an agreement with UTXO Web Tech, you acknowledge that you have read, understood, and agreed to be bound by these Terms and Conditions.",
+        "By entering into an agreement with UTXO Web Tech, the Client acknowledges that they have read, understood, and agreed to be bound by these Terms and Conditions.",
         "UTXO Web Tech reserves the right to modify or update these Terms and Conditions at any time without notice.",
       ],
       subContent: [],
@@ -63,7 +63,7 @@ const termsAndConditions = {
     {
       title: "Definitions",
       subHeading:
-        "In these Terms and Conditions, the following definitions apply :",
+        "In these Terms and Conditions, the following definitions apply:",
       content: [
         "“Client” means an individual or organization that enters into an agreement with UTXO Web Tech for the provision of services.",
         "“Content” means any text, images, audio, video, or other materials provided by UTXO Web Tech or its clients.",
@@ -81,23 +81,31 @@ const termsAndConditions = {
       subHeading: "",
       content: [
         "UTXO Web Tech provides a range of Digital Services, including but not limited to web design, development, and maintenance, SEO, SMO, PPC, graphic design, and content creation.",
-        "UTXO Web Tech will use reasonable efforts to achieve the desired results, but the outcome is dependent on various factors, including but not limited to:",
-        "The quality of the website, including but not limited to its design, content, and functionality.",
+        "UTXO Web Tech is responsible for generating and delivering qualified leads to its clients through SEO, SMO, and PPC services. However, the conversion of these leads into actual sales, bookings, or other desired outcomes is the sole responsibility of the Client.",
+        "The Client acknowledges that UTXO Web Tech's role is limited to providing marketing and advertising services, and that the Client's sales, customer service, and business operations are outside the scope of UTXO Web Tech's services.",
+        "For SEO services, UTXO Web Tech does not guarantee a specific ranking or timeline for achieving desired results, as SEO is a dynamic and constantly evolving field. Results may vary and may take time to materialize.",
+        "UTXO Web Tech will make reasonable efforts to optimize the Client's website for search engines, but cannot be held responsible for changes in search engine algorithms, competitor activity, or other factors beyond its control that may impact SEO results.",
+        "The Client understands that SEO is a long-term strategy and that it may take several months to a year or more to see significant improvements in search engine rankings and organic traffic.",
+        "UTXO Web Tech may provide regular progress reports and analytics to the Client, but the Client acknowledges that these reports are for informational purposes only and do not constitute a guarantee of results.",
+        "By 'reasonable efforts,' we mean that we will use our professional expertise and resources to deliver high-quality services, but we cannot guarantee specific results or outcomes.",
+        "UTXO Web Tech will use reasonable efforts to achieve the desired results, but the outcome is dependent on various factors, including but not limited to the following:",
       ],
       subContent: [
-        "The competitiveness of the industry, including but not limited to the number of competitors and the level of competition.",
-        "The search engine algorithms, including but not limited to changes to the algorithms and the impact of such changes on the website’s ranking.",
-        "The Client’s cooperation and provision of necessary information and assets, including but not limited to timely payment, provision of content, and approval of designs.",
-        "The Client’s adherence to UTXO Web Tech’s recommendations and guidelines, including but not limited to SEO best practices and social media marketing strategies.",
-        "The impact of third-party factors, including but not limited to changes to the website’s hosting, server, or other technical infrastructure.",
-        "The impact of external factors, including but not limited to changes to the market, industry, or economy.",
+        "The quality of the website, including its design, content, and functionality.",
+        "The competitiveness of the industry, including the number of competitors and the level of competition.",
+        "Changes to search engine algorithms and their impact on the website's ranking.",
+        "The Client's cooperation and provision of necessary information and assets, including timely payment, provision of content, and approval of designs.",
+        "The Client's adherence to UTXO Web Tech's recommendations and guidelines, including SEO best practices and social media marketing strategies.",
+        "Third-party factors, such as changes to the website's hosting, server, or other technical infrastructure.",
+        "External factors, such as changes to the market, industry, or economy.",
       ],
     },
     {
       title: "Payment Terms",
       subHeading: "",
       content: [
-        "Payment terms will be as agreed upon in the agreement.",
+        "All prices are exclusive of Goods and Services Tax (GST) and other applicable taxes.",
+        "Payment is due on the first day of each month.",
         "Late payments may incur additional fees and penalties.",
       ],
       subContent: [],
@@ -106,8 +114,43 @@ const termsAndConditions = {
       title: "Cancellation and Termination",
       subHeading: "",
       content: [
-        "Cancellations must be made in writing and may be subject to additional fees and penalties.",
+        "Cancellations must be made in writing (via email or registered mail) at least 15 days before the next billing cycle.",
         "UTXO Web Tech reserves the right to terminate an agreement if the client fails to make timely payments or provide necessary information and assets.",
+      ],
+      subContent: [],
+    },
+    {
+      title: "Client Responsibilities",
+      subHeading: "",
+      content: [
+        "The client is responsible for providing accurate and timely information to facilitate the project's progress.",
+        "Making timely payments in accordance with the payment terms outlined. Failure to fulfill these responsibilities may result in delays and additional costs, which will be borne by the client.",
+      ],
+      subContent: [],
+    },
+    {
+      title: "Scope of Work",
+      subHeading: "",
+      content: [
+        "The agency reserves the right to modify the scope of work, timelines, and costs if the client's requirements change.",
+        "Any changes will be documented and approved in writing by both parties.",
+      ],
+      subContent: [],
+    },
+    {
+      title: "Intellectual Property Rights",
+      subHeading: "",
+      content: [
+        "The agency will retain the intellectual property rights to all work created, unless otherwise agreed upon in writing.",
+        "In the event of termination, the agency will retain ownership of all intellectual property rights.",
+      ],
+      subContent: [],
+    },
+    {
+      title: "Third-Party Materials",
+      subHeading: "",
+      content: [
+        "The client will be responsible for obtaining all necessary permissions and approvals for the use of any third-party materials, including content, images, videos, and music and other materials.",
       ],
       subContent: [],
     },
@@ -116,27 +159,7 @@ const termsAndConditions = {
       subHeading: "",
       content: [
         "UTXO Web Tech will maintain the confidentiality of your information and will not disclose it to any third party without prior written consent.",
-        "You shall not disclose any confidential information, including but not limited to business strategies, trade secrets, and proprietary information, to any third party.",
-      ],
-      subContent: [],
-    },
-    {
-      title: "Intellectual Property Rights",
-      subHeading: "",
-      content: [
-        "UTXO Web Tech retains all Intellectual Property rights to any materials created during the provision of Digital Services.",
-        "The Client is granted a non-exclusive license to use the materials for the purpose of promoting their business or organization.",
-        "The Client agrees not to use the materials for any other purpose without the prior written consent of UTXO Web Tech.",
-      ],
-      subContent: [],
-    },
-    {
-      title: "Graphic Design Services",
-      subHeading: "",
-      content: [
-        "UTXO Web Tech retains all Intellectual Property rights to any graphic design materials created during the provision of Graphic Design Services.",
-        "The Client is granted a non-exclusive license to use the graphic design materials for the purpose of promoting their business or organization.",
-        "The Client agrees not to use the graphic design materials for any other purpose without the prior written consent of UTXO Web Tech.",
+        "The Client shall not disclose any confidential information, including but not limited to business strategies, trade secrets, and proprietary information, to any third party.",
       ],
       subContent: [],
     },
@@ -220,7 +243,6 @@ const termsAndConditions = {
       ],
       subContent: [],
     },
-
     {
       title: "Notices for Disputes",
       subHeading: "",
@@ -234,6 +256,59 @@ const termsAndConditions = {
       subHeading: "",
       content: [
         "UTXO Web Tech will not be liable for any failure or delay in performing its obligations under these Terms and Conditions if such failure or delay is caused by circumstances beyond its reasonable control.",
+      ],
+      subContent: [],
+    },
+    {
+      title: "Refund Policy",
+      subHeading: "",
+      content: [
+        "UTXO Web Tech does not offer refunds for any services provided.",
+        "All payments made to UTXO Web Tech are non-refundable.",
+      ],
+      subContent: [],
+    },
+    {
+      title: "Cookies Policy",
+      subHeading: "",
+      content: [
+        "UTXO Web Tech uses cookies to improve the user experience on its Website.",
+        "By using the Website, you consent to the use of cookies.",
+      ],
+      subContent: [],
+    },
+    {
+      title: "Hosting Policy",
+      subHeading: "",
+      content: [
+        "UTXO Web Tech uses third-party hosting services to host its Website and provide its Services.",
+        "UTXO Web Tech is not responsible for any downtime or technical issues caused by the hosting services.",
+      ],
+      subContent: [],
+    },
+    {
+      title: "Additional Terms",
+      subHeading:
+        "For more detailed information, please read our Terms and Conditions page (https://utxotech.com/terms-and-conditions) on our website.",
+      content: [
+        "This agreement constitutes the entire understanding between the parties and supersedes all prior negotiations, understandings, and agreements.",
+      ],
+      subContent: [],
+    },
+    {
+      title: "Website Visitor Terms",
+      subHeading: "",
+      content: [
+        "By accessing the Website, you acknowledge that you have read, understood, and agreed to be bound by these Terms and Conditions.",
+        "You agree to use the Website only for lawful purposes and in a manner that does not infringe the rights of, or restrict or inhibit the use and enjoyment of the Website by, any other person.",
+      ],
+      subContent: [],
+    },
+    {
+      title: "Limitation of Liability for Website Use",
+      subHeading: "",
+      content: [
+        "UTXO Web Tech will not be liable for any damages, including but not limited to incidental, consequential, or punitive damages, arising out of or related to your use of the Website.",
       ],
       subContent: [],
     },

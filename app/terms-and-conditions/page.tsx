@@ -3,7 +3,7 @@ import Footer from "../package/Footer";
 import { myFont } from "@/fonts";
 
 const termsAndConditions = {
-  title: "Terms and Conditions of UTXO Web Tech",
+  title: "Terms and Conditions ",
   sections: [
     {
       title: "Use of Website",
@@ -286,15 +286,7 @@ const termsAndConditions = {
       ],
       subContent: [],
     },
-    {
-      title: "Additional Terms",
-      subHeading:
-        "For more detailed information, please read our Terms and Conditions page (https://utxotech.com/terms-and-conditions) on our website.",
-      content: [
-        "This agreement constitutes the entire understanding between the parties and supersedes all prior negotiations, understandings, and agreements.",
-      ],
-      subContent: [],
-    },
+
     {
       title: "Website Visitor Terms",
       subHeading: "",
@@ -335,7 +327,7 @@ const TermsCondition = () => {
               <h4 className="text-xl">{section.subHeading}</h4>
             )}
             {section.content.length === 1 ? (
-              <p className="text-lg">{section.content[0]}</p>
+              <p className="text-xl">{section.content[0]}</p>
             ) : (
               <ul className="pl-7">
                 {section.content.map((paragraph, idx) => (
@@ -346,7 +338,7 @@ const TermsCondition = () => {
               </ul>
             )}
             {section.subContent.length === 1 ? (
-              <p className="text-lg">{section.subContent[0]}</p>
+              <p className="text-xl">{section.subContent[0]}</p>
             ) : (
               <ul className="pl-14">
                 {section.subContent.map((paragraph, idx) => (
@@ -358,7 +350,6 @@ const TermsCondition = () => {
             )}
           </div>
         ))}
-        <p>{termsAndConditions.conclusion}</p>
       </div>
       <div className="pt-16">
         <Footer />

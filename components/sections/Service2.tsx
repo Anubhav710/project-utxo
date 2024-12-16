@@ -23,7 +23,6 @@ const Service2 = () => {
       ScrollTrigger.create({
         trigger: "#mobile-ul-1",
         start: "top center",
-        markers: true,
         animation: gsap.from(".mli-1", {
           xPercent: -100,
           stagger: 0.05,
